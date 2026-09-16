@@ -1,0 +1,23 @@
+function selectRole(role) {
+
+    const message = document.getElementById("roleMessage");
+
+    if (role === "student") {
+
+        message.innerHTML =
+            "You selected STUDENT... Redirecting you to the TEACHER interface. 🤡";
+
+        setTimeout(function () {
+            window.location.href = "login.html?role=teacher";
+        }, 1500);
+
+    } else {
+
+        message.innerHTML =
+            "You selected TEACHER... Redirecting you to the STUDENT interface. 🤡";
+
+        setTimeout(function () {
+            window.location.href = "login.html?role=student";
+        }, 1500);
+    }
+}
