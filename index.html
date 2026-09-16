@@ -1,23 +1,47 @@
-function selectRole(role) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    const message = document.getElementById("roleMessage");
+    <title>Attendance Portal™</title>
 
-    if (role === "student") {
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        message.innerHTML =
-            "You selected STUDENT... Redirecting you to the TEACHER interface. 🤡";
+<body>
 
-        setTimeout(function () {
-            window.location.href = "login.html?role=teacher";
-        }, 1500);
+    <div class="container">
 
-    } else {
+        <h1>ATTENDANCE PORTAL™</h1>
 
-        message.innerHTML =
-            "You selected TEACHER... Redirecting you to the STUDENT interface. 🤡";
+        <p class="subtitle">
+            Making attendance harder since 2026.
+        </p>
 
-        setTimeout(function () {
-            window.location.href = "login.html?role=student";
-        }, 1500);
-    }
-}
+        <div class="warning">
+            ⚠️ WARNING: This website may cause unnecessary frustration.
+        </div>
+
+        <h2>Who are you?</h2>
+
+        <div class="role-container">
+
+            <button onclick="selectRole('student')">
+                👨‍🎓 STUDENT
+            </button>
+
+            <button onclick="selectRole('teacher')">
+                👨‍🏫 TEACHER
+            </button>
+
+        </div>
+
+        <p id="roleMessage"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
