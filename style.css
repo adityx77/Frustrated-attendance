@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+}
+
+.container {
+    max-width: 700px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border: 3px solid #222;
+    box-shadow: 10px 10px 0px #222;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 16px;
+}
+
+.warning {
+    margin: 25px 0;
+    padding: 15px;
+    background: #fff3cd;
+    border: 2px solid #ffcc00;
+}
+
+.role-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 18px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid #222;
+    background: #ffffff;
+}
+
+button:hover {
+    transform: rotate(-2deg);
+    box-shadow: 5px 5px 0px #222;
+}
+
+#roleMessage {
+    margin-top: 30px;
+    font-weight: bold;
+}
